@@ -12,23 +12,13 @@
 @endsection
 
 @section('content')
-
-@if (Session::get('flash_danger'))
-<div class="alert alert-danger">
-    @if(is_array(json_decode(Session::get('flash_danger'),true)))
-    {!! implode('', Session::get('flash_danger')->all(':message<br/>')) !!}
-    @else
-    {!! Session::get('flash_danger') !!}
-    @endif
-</div>
-@endif
 <div class="row">
     <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
             <span class="info-box-icon bg-aqua"><i class="fa fa-th"></i></span>
             <div class="info-box-content">
                 <span class="info-box-text">Total Posts</span>
-                <span class="info-box-number" id="powered-units">{{ $totalCount }}</span>
+                <span class="info-box-number">{{ $totalCount }}</span>
             </div><!-- /.info-box-content -->
         </div><!-- /.info-box -->
     </div><!-- /.col -->
@@ -37,7 +27,7 @@
             <span class="info-box-icon bg-red"><i class="glyphicon glyphicon-wrench"></i></span>
             <div class="info-box-content">
                 <span class="info-box-text">Published Posts</span>
-                <span class="info-box-number" id="billable-miles">{{ $publishCount }}</span>
+                <span class="info-box-number">{{ $publishCount }}</span>
             </div><!-- /.info-box-content -->
         </div><!-- /.info-box -->
     </div><!-- /.col -->
@@ -50,7 +40,7 @@
             <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
             <div class="info-box-content">
                 <span class="info-box-text">Posts in Draft</span>
-                <span class="info-box-number" id="avg-miles">{{ $draftCount }}</span>
+                <span class="info-box-number">{{ $draftCount }}</span>
             </div><!-- /.info-box-content -->
         </div><!-- /.info-box -->
     </div><!-- /.col -->
@@ -59,7 +49,7 @@
             <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
             <div class="info-box-content">
                 <span class="info-box-text">Total Comments</span>
-                <span class="info-box-number" id="gallons-purchased">0</span>
+                <span class="info-box-number">0</span>
             </div><!-- /.info-box-content -->
         </div><!-- /.info-box -->
     </div><!-- /.col -->
