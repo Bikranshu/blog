@@ -31,11 +31,19 @@ class HomeController extends BaseController
         $this->postService = $postService;
     }
 
+    /**
+     * Display the blog list
+     * @return View
+     */
     public function index()
     {
         return View::make('frontend.blog')->with('posts', $this->postService->getPublishPosts());
     }
 
+    /**
+     * Display the post detail
+     * @return View
+     */
     public function detail($id)
     {
         try {
@@ -45,6 +53,10 @@ class HomeController extends BaseController
         }
     }
 
+    /**
+     * Display the all post
+     * @return View
+     */
     public function all()
     {
         return View::make('frontend.blog-all')->with('posts', $this->postService->getAllPublishPosts());

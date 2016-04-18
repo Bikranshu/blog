@@ -28,8 +28,8 @@ class PostService
     }
 
     /**
-     * 
-     * @return mixed
+     * get all posts
+     * @return array
      */
     public function getAllPosts()
     {
@@ -37,8 +37,8 @@ class PostService
     }
 
     /**
-     * 
-     * @return mixed
+     * get only 5 publish posts
+     * @return array
      */
     public function getPublishPosts()
     {
@@ -46,7 +46,8 @@ class PostService
     }
 
     /**
-     * @return mixed
+     * get all publish posts
+     * @return array
      */
     public function getAllPublishPosts()
     {
@@ -54,8 +55,8 @@ class PostService
     }
 
     /**
-     * 
-     * @return mixed
+     * get count publish posts
+     * @return int
      */
     public function getPublishPostCount()
     {
@@ -63,8 +64,8 @@ class PostService
     }
 
     /**
-     * 
-     * @return mixed
+     * get count draft posts
+     * @return int
      */
     public function getDraftPostCount()
     {
@@ -72,12 +73,13 @@ class PostService
     }
 
     /**
+     * get post by id
      * @param integer $id
-     * @return mixed
+     * @return array
      */
     public function findById($id)
     {
-        return $account = $this->posts->findOrThrowException($id);
+        return $this->posts->findOrThrowException($id);
     }
 
     /**

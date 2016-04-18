@@ -37,7 +37,7 @@ class PostController extends BaseController
     }
 
     /**
-     * Display the blog page
+     * Display the post page
      * @return View
      */
     public function index()
@@ -47,11 +47,19 @@ class PostController extends BaseController
         );
     }
 
+    /**
+     * Display the post add page
+     * @return View
+     */
     public function add()
     {
         return View::make('backend.post.post-add');
     }
 
+    /**
+     * Display the post edit page
+     * @return View
+     */
     public function edit($id)
     {
         try {
@@ -64,8 +72,8 @@ class PostController extends BaseController
     }
 
     /**
-     *
-     * @return mixed
+     * Used to store post information
+     * @return array $response
      */
     public function store()
     {
@@ -88,8 +96,8 @@ class PostController extends BaseController
     }
 
     /**
-     *
-     * @return mixed
+     * Used to update post information
+     * @return array $response
      */
     public function update()
     {
@@ -114,8 +122,9 @@ class PostController extends BaseController
     }
 
     /**
+     * Used to delete post information
      * @param $id
-     * @return mixed
+     * @return array $response
      */
     public function destroy($id)
     {

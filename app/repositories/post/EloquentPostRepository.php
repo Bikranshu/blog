@@ -5,6 +5,7 @@ namespace App\Repositories\Post;
 use App\Models\Post;
 use Auth;
 use App\Exceptions\GeneralException;
+
 /**
  * Class EloquentPostRepository
  * @package App\Repositories\Post
@@ -29,9 +30,10 @@ class EloquentPostRepository implements PostContract
     }
 
     /**
+     * get all posts
      * @param string $orderBy
      * @param string $sort
-     * @return mixed
+     * @return array
      */
     public function getAllPosts($orderBy = 'created_at', $sort = 'desc')
     {
@@ -39,9 +41,10 @@ class EloquentPostRepository implements PostContract
     }
 
     /**
+     * get only 5 publish posts
      * @param string $orderBy
      * @param string $sort
-     * @return mixed
+     * @return array
      */
     public function getPublishPosts($orderBy = 'created_at', $sort = 'desc')
     {
@@ -49,9 +52,10 @@ class EloquentPostRepository implements PostContract
     }
 
     /**
+     * get all publish posts
      * @param string $orderBy
      * @param string $sort
-     * @return mixed
+     * @return array
      */
     public function getAllPublishPosts($orderBy = 'created_at', $sort = 'desc')
     {
@@ -59,8 +63,8 @@ class EloquentPostRepository implements PostContract
     }
 
     /**
-     * 
-     * @return mixed
+     * get count publish posts
+     * @return int
      */
     public function getPublishPostCount()
     {
@@ -68,8 +72,8 @@ class EloquentPostRepository implements PostContract
     }
 
     /**
-     * 
-     * @return mixed
+     * get count draft posts
+     * @return int
      */
     public function getDraftPostCount()
     {
@@ -77,6 +81,7 @@ class EloquentPostRepository implements PostContract
     }
 
     /**
+     * create post
      * @param $input
      */
     public function create($input)
@@ -93,6 +98,7 @@ class EloquentPostRepository implements PostContract
     }
 
     /**
+     * update post
      * @param $id
      * @param $input
      */
@@ -110,6 +116,7 @@ class EloquentPostRepository implements PostContract
     }
 
     /**
+     * delete post
      * @param $id
      * @return bool
      * @throws GeneralException

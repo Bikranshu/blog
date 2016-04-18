@@ -12,59 +12,65 @@ interface PostContract
 
     /**
      * @param $id
-     * @return mixed
+     * @return \Illuminate\Support\Collection|null|static
+     * @throws GeneralException
      */
     public function findOrThrowException($id);
 
     /**
+     * get all posts
      * @param string $orderBy
      * @param string $sort
-     * @return mixed
+     * @return array
      */
     public function getAllPosts($orderBy = 'id', $sort = 'desc');
 
     /**
+     * get only 5 publish posts
      * @param string $orderBy
      * @param string $sort
-     * @return mixed
+     * @return array
      */
     public function getPublishPosts($orderBy = 'created_at', $sort = 'desc');
 
     /**
+     * get all publish posts
      * @param string $orderBy
      * @param string $sort
-     * @return mixed
+     * @return array
      */
     public function getAllPublishPosts($orderBy = 'created_at', $sort = 'desc');
 
     /**
-     * 
-     * @return mixed
+     * get count publish posts
+     * @return int
      */
     public function getPublishPostCount();
 
     /**
-     * 
-     * @return mixed
+     * get count draft posts
+     * @return int
      */
     public function getDraftPostCount();
 
     /**
-     * @param $account
-     * @return mixed
+     * create post
+     * @param $input
      */
-    public function create($account);
+    public function create($input);
 
     /**
+     * update post
      * @param $id
-     * @param $account
-     * @return mixed
+     * @param $input
      */
-    public function update($id, $account);
+    public function update($id, $input);
 
     /**
+     * delete post
      * @param $id
-     * @return mixed
+     * @return bool
+     * @throws GeneralException
      */
     public function destroy($id);
 }
