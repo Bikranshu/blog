@@ -1,0 +1,287 @@
+
+/* 
+    Created on : Dec 9, 2015, 12:09:18 PM
+    Author     : Krishna Prasad Timilsina
+*/
+.confirm-modal-box-small {
+    width: 300px;
+    margin-left: 140px;
+}
+.modal-x-large-width{
+    width: 1100px;
+}
+.modal-large-width{
+    width: 970px;
+}
+.modal-medium-width{
+    width: 730px;
+}
+table tbody tr:first-child th, table tbody tr:first-child td {
+    border-top: none;
+}
+.box-shadow-remove{
+    border-top: none;
+    box-shadow: none;
+    margin-bottom: 0px;
+}
+.login-box .alert-danger{
+    padding: 8px;
+}
+.fixed-popup .modal-header, .fixed-popup .modal-body, .fixed-popup .modal-footer{
+    padding: 7px 30px;
+}
+.fixed-popup .form-group {
+    margin-bottom: 11px;
+}
+.fixed-popup-medium .modal-header, .fixed-popup-medium .modal-body, .fixed-popup-medium .modal-footer{
+    padding: 9px 30px;
+}
+.fixed-popup-medium .form-group {
+    margin-bottom: 14px;
+}
+.clear-both{
+    clear: both;
+}
+.height-40{
+    height: 40px;
+}
+.has-error .input-group-addon {
+    color: #e74c3c;
+    border-color: #e74c3c;
+}
+.has-error.form-control {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.has-error.form-control:focus {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+.checkbox-group.has-error label{
+    color: #e74c3c;
+}
+label span.error{
+    color:#e74c3c;
+    margin-left: 5px;
+}
+span.help-block:before {
+    content: "\f071";
+    font-family: 'FontAwesome';
+    margin: 0 4px;
+}
+.has-error .help-block{
+    color: #e74c3c;
+}
+.checkbox-group span{
+    margin: 12px 0 0 -21px;
+}
+.datepicker{
+    z-index:1151 !important;
+    border-radius: 0;
+}
+.no-wrap {
+    white-space: nowrap;
+}
+.icon-filter{
+    background:url('../../img/datagrid/filter.png') no-repeat center center;
+}
+/*
+ * Component: Custom Filter 
+ * -------------------
+ */
+.form-multiline .form-group {
+    margin: 0 100px 13px 0;
+}
+
+.form-multiline .form-group.gallon-purchased-filter-btn {
+    margin-left: -22px;
+}
+.form-multiline label,
+.form-multiline .form-control {
+    margin-right: 5px;
+}
+#gallon-purchased-summary_wrapper .dataTables_filter {
+    display: none;
+}
+
+/* if you do not use the reset button to add the cell this class */
+.yadcf-no-reset .yadcf-filter-wrapper {
+    padding-right: 0;
+}
+.label-inline{
+    display: inline;
+    float: left;
+    padding-top: 7px;
+}
+.yadcf-filter-wrapper {
+    display: block;
+    padding-right: 36px;
+    white-space: nowrap;
+}
+.yadcf-filter-wrapper .form-control,
+.yadcf-filter-wrapper .select2-container,
+.yadcf-filter-wrapper .select2-container.form-control,
+.yadcf-filter-wrapper .yadcf-number-slider-filter-wrapper-inner {
+    display: inline-block;
+    width: 100%;
+}
+.yadcf-filter-wrapper .input-group .yadcf-filter-range-date {
+    width: 155px;
+}
+.yadcf-filter-wrapper #yadcf-filter--mileage-1 {
+    width: 225px;
+}
+.yadcf-filter-wrapper .yadcf-filter-range-number {
+    width: 60px;
+}
+.yadcf-filter-wrapper-inner {
+    display: inline-block;
+    vertical-align: middle;
+}
+.yadcf-filter-range {
+    display: inline-block;
+    vertical-align: middle;
+}
+.yadcf-filter-range-date-seperator,
+.yadcf-filter-range-number-seperator {
+    display: inline-block;
+    margin-left: 1px;
+    vertical-align: middle;
+}
+.yadcf-range-stack .yadcf-filter-wrapper-inner {
+    display: inline-block;
+    vertical-align: top;
+}
+.yadcf-range-stack .yadcf-filter-range {
+    display: block;
+}
+.yadcf-range-stack .yadcf-filter-range-date-seperator,
+.yadcf-range-stack .yadcf-filter-range-number-seperator {
+    display: none;
+}
+
+/*
+ * Component: Corefleet
+ * -------------------
+ */
+.corefleet-item.corefleet-box-primary {
+    border-top: 3px solid #d2d6de;
+}
+.corefleet-item {
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 3px 3px 0px 0px;
+    margin-top: 0;
+    background: #fff;
+    color: #444;
+    padding: 0;
+    position: relative;
+}
+.corefleet-item > .corefleet-header {
+    margin: 0;
+    color: #555;
+    border-bottom: 1px solid #f4f4f4;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.1;
+}
+.corefleet-item > .corefleet-header > a {
+    font-weight: 600;
+}
+.corefleet-item > .corefleet-body,
+.corefleet-item > .corefleet-footer {
+    /*    padding: 10px;*/
+    padding: 12px 10px 1px 10px;
+}
+.corefleet-item {
+    background: #f9f9f9;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.corefleet-item > .corefleet-header {
+    border-bottom-color: #ddd;
+}
+/*
+ * Component: Data Grid
+ * -------------------
+ */
+.datagrid-view td[field="action"] .datagrid-filter-c{
+    display: none !important;
+} 
+.datebox .textbox-addon{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+}
+.datebox .combo-arrow:before {
+    content: "\f073";
+}
+.datebox .combo-arrow {
+    background:none !important;
+}
+.tabs li.tabs-first a.tabs-inner {
+    border-left: none !important;
+}
+.tabs li.tabs-selected a.tabs-inner{
+    border-top: 3px solid #3c8dbc !important;
+}
+.datagrid-header .datagrid-cell {
+    white-space: normal;
+}
+form fieldset {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius:3px;
+    padding:7px; 
+    border:1px solid #eee;
+    float: left;
+    margin: 10px 
+}
+form fieldset legend {
+    font-size:1.4em;
+    padding:0 5px;
+    width: auto;
+    border-bottom:none;
+    margin-bottom:0px;
+}
+.display-inline{
+    display: inline;
+}
+form#gallons-add-form div span.numberbox{
+    width: 214px !important;
+    height: 30px !important;
+    padding: 4px;
+}
+form#gallons-add-form div span.textbox{
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px; 
+    border-radius: 0px; 
+}
+form#gallons-add-form div.col-lg-2{
+    width: 22.99997%;
+}
+input[disabled] {
+    width: 158px !important;
+    padding: 6px !important;
+    margin: -4px !important;
+    -moz-border-radius:0px !important;
+    -webkit-border-radius: 0px !important;
+    border-radius: 0px !important;
+}
+.float-right{
+    float: right;   
+}
+.float-left{
+    float: left;   
+}
+.box-header>.permission-box-tools {
+    position: absolute;
+    right: 317px;
+    top: 14px;
+}
+span.pagination-load{
+    display: none;
+}
