@@ -3,7 +3,7 @@ Blog with Laravel 4.2
 
 ## Instructions
 
-$ git clone 
+$ git clone git@github.com:Bikranshu/blog.git
 
 $ composer install or composer update
 
